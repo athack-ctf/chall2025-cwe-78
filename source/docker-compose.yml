@@ -1,0 +1,6 @@
+services:
+  chall:
+    build: .
+    image: chall2025-online-template-php-based
+    ports:
+      - "2025:80"
