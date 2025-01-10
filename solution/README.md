@@ -7,6 +7,7 @@
 - Enter payload `google.com>/dev/null;cat flag.php`
 
   ![](./2-enter-ci-payload.png)
+
 - Submit to get the flag
 
-  ![](./3-enter-ci-payload.png)
+  ![](./3-get-the-flag.png)
