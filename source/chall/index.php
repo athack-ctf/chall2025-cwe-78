@@ -21,6 +21,7 @@
                 alert("Invalid domain name. Please enter a valid domain.");
             }
         }
+
         document.addEventListener('DOMContentLoaded', () => {
             const form = document.querySelector('form');
             form.addEventListener('submit', validateForm);
@@ -59,14 +60,10 @@
     <?php
     if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $domain = $_POST['domain'];
-        if (filter_var($domain, FILTER_VALIDATE_DOMAIN, FILTER_FLAG_HOSTNAME)) {
-            echo "<div class='result'><h3>dig response for: " . htmlspecialchars($domain) . "</h3><pre>";
-            $output = shell_exec("dig " . $domain);
-            echo htmlspecialchars($output);
-            echo "</pre></div>";
-        } else {
-            echo "<div class='result'><p>Invalid domain name. Please try again.</p></div>";
-        }
+        echo "<div class='result'><h3>dig response for: " . htmlspecialchars($domain) . "</h3><pre>";
+        $output = shell_exec("dig " . $domain);
+        echo htmlspecialchars($output);
+        echo "</pre></div>";
     }
     ?>
     <div class="challenge">

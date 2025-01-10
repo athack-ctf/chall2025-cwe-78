@@ -1,6 +1,6 @@
 services:
   chall:
     build: .
-    image: chall2025-online-template-php-based
+    image: chall2025-cwe-78
     ports:
       - "2025:80"
