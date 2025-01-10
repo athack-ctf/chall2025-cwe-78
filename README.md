@@ -7,7 +7,7 @@
 - [ ] **OFF**line
 - [X] **ON**line
 
-## Designer(s)
+## Designer
 
 - Anis
 
@@ -17,6 +17,6 @@ A classic command injection vulnerability based challenge (for beginners).
 
 **IMPORTANT:** This description will **NOT** be shared with participants.
 
-## Category(ies)
+## Category
 
 - `web`
