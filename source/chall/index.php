@@ -62,7 +62,9 @@
         $domain = $_POST['domain'];
         echo "<div class='result'><h3>dig response for: " . htmlspecialchars($domain) . "</h3><pre>";
         $output = shell_exec("dig " . $domain);
-        echo htmlspecialchars($output);
+        if ($output !== null) {
+            echo htmlspecialchars($output);
+        }
         echo "</pre></div>";
     }
     ?>

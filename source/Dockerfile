@@ -19,5 +19,8 @@ RUN a2enmod rewrite
 # Expose port 80
 EXPOSE 80
 
+RUN chown root:root -R /var/www/html
+RUN chmod 755 /var/www/html
+
 # Start Apache
 CMD ["apache2-foreground"]
