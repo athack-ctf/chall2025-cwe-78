@@ -1,0 +1,22 @@
+name: "CWE 78"
+author: "Anis"
+category: Pwn
+description: |
+    This challenge is all about CWE-78. Don't know what that means? We'll give you a clue.
+    
+value: 50
+
+type: standard
+
+flags:
+  - type: "static"
+    content: "ATHACKCTF{c0mm4nd_Inj3ecti0ns_4re_5c4ry}"
+    data: "case_insensitive"
+
+tags:
+    - beginner
+    - http
+
+state: visible
+
+version: "0.1"
