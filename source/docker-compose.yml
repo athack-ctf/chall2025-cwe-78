@@ -3,6 +3,6 @@ version: '3.8'
 services:
   cwe-78:
     build: .
-    image: athack-ctf/chall2025-cwe-78
+    image: athack-ctf/chall2025-cwe-78:latest
     ports:
       - "2025:80"
