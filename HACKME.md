@@ -1,1 +1,0 @@
-This challenge is all about CWE-78. Don’t know what that means? We'll give you a clue.
