@@ -1,7 +1,11 @@
-# Running the challenge
+# Running This challenge
 
-## Using `docker compose`
-
+Build
 ```
-docker compose up --build
+docker build -t athack-ctf/chall2025-cwe-78:latest .
+```
+
+Run
+```
+docker run -d --name cwe-78 -p 52044:80 athack-ctf/chall2025-cwe-78:latest
 ```
